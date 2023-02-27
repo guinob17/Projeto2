@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css"/>
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <h1>Pesquisa para Supermercados</h1><br>
+        <hr /><br>
+        <label class="pergunta"><strong>Preencha os seus dados pessoais:</strong></label>
+        <ul class="cabeçalho" style="list-style-type: none;">
+            <li>Primeiro Nome: <input type="text" name="firstname" 
+                size="15" maxlength="25"/></li>
+            <li>Último Nome: <input type="text" name="lastname" size="15"
+                maxlength="25"/></li>
+            <li>Senha: <input type="password" name="psswrd" size="15"
+                maxlength="25"/></li>
+            <li>Endereço: <input type="text" name="end" size="25"
+                maxlength="25"/></li>
+            <li>Data de Nascimento: <input type="date" name="birthday" size="6"
+                maxlength="25"/></li>
+        </ul><br>
+
+        <label class="pergunta"><strong>Qual é o seu gênero?</strong></label>
+        <ul class="cabeçalho" style="list-style-type: none;">
+            <li><input type="radio" name="gender" value="male" 
+                checked="checked"/> Masculino</li>
+            <li><input type="radio" name="gender" value="female"/>
+                Feminino</li>
+            <li><input type="radio" name="gender" value="transgenero"/>
+                Transgênero</li>
+            <li><input type="radio" name="gender" value="naobinario"/>
+                Não-Binário</li>
+            <li><input type="radio" name="gender" value="Outro"/>
+                Outro</li>
+        </ul><br>
+
+        <label class="pergunta"><strong>Quais os primeiros setores que costuma
+            ir assim que entra em um supermercado?</strong></label>
+        <ul class="cabeçalho" style="list-style-type: none;">
+            <li><input type="checkbox" name="setor" value="açougue"
+            checked="checked"/> Açougue</li>
+            <li><input type="checkbox" name="setor" value="frios"/>
+                Frios e laticínios</li>
+            <li><input type="checkbox" name="setor" value="bebidas"/>
+                Adega e bebidas</li>
+            <li><input type="checkbox" name="setor" value="padaria"/>
+                Padaria</li>
+            <li><input type="checkbox" name="setor" value="higiene"/>
+                Higiene e limpeza</li>
+            <li><input type="checkbox" name="setor" value="outro"/>
+                Outro</li>
+        </ul><br>
+
+        <label class="pergunta"><strong>Por favor,Insira aqui o seu currílo:
+            <br><br><input id="resume" type="file" name="curriculo"/>
+        </strong></label><br>
+
+        <br><label class="pergunta"><strong>Selecione a opção fundamental que
+            te faz escolher um supermercado:</strong></label><br><br>
+        <Select id="choose" name="escolha">
+            <option value="" selected disabled>Selecione aqui</option>
+            <option value="prices">Preços</option>
+            <option value="care">Atendimento</option>
+            <option value="location">Localização</option>
+            <option value="quality">Qualidade dos produtos</option>
+            <option value="parking">Estacionamento</option>
+            <option value="outros">Outros</option>
+        </Select><br><br>
+
+        <label class="pergunta"><strong>Conte-nos um pouco as suas piores experiências
+            que já vivênciou em supermercados:</strong></label><br><br>
+        <textarea rows="10" cols="40" name="comments">
+           
+        </textarea>
+
+        <p style="line-height: 2em; margin: 2em;">
+            <input class="botao" type="submit" value="send"/>
+            <input class="botao" type="reset" value="clear"/>
+        </p>
+        <hr />
+    
+    </form>
+
+</body>
+</html>
